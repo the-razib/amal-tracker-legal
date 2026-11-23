@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service — Amal Tracker</title>
+  <meta name="description" content="Official Terms of Service for Amal Tracker (org.mys.amaltracker) by Monipur Youth Society (MYS)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f6faf8;
+      --surface: #ffffff;
+      --notice: #eaf6f1;
+      --primary: #0f6b4e;
+      --primary-dark: #0b4735;
+      --text: #162620;
+      --muted: #4b6359;
+      --border: rgba(15, 107, 78, 0.15);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Plus Jakarta Sans', 'Hind Siliguri', system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.72;
+    }
+
+    .topbar {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .topbar-inner {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      font-weight: 800;
+      font-size: 16px;
+      color: var(--primary-dark);
+      text-decoration: none;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .lang-btn {
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--primary-dark);
+      padding: 7px 14px;
+      border-radius: 999px;
+      font-family: inherit;
+      font-size: 13.5px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .lang-btn.active {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+    }
+
+    .link-pill {
+      text-decoration: none;
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--muted);
+      padding: 7px 12px;
+      border-radius: 999px;
+    }
+
+    .link-pill:hover { background: var(--notice); color: var(--primary-dark); }
+
+    .doc-container {
+      max-width: 860px;
+      margin: 30px auto 60px;
+      padding: 0 20px;
+    }
+
+    .paper {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 36px 34px;
+      box-shadow: 0 16px 40px rgba(11, 71, 53, 0.06);
+    }
+
+    @media (max-width: 600px) {
+      .paper { padding: 24px 18px; }
+    }
+
+    .doc-header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 20px;
+      margin-bottom: 24px;
+    }
+
+    .doc-header h1 {
+      font-size: clamp(24px, 3.5vw, 32px);
+      font-weight: 800;
+      color: var(--primary-dark);
+      margin-bottom: 6px;
+    }
+
+    .meta {
+      font-size: 13.5px;
+      color: var(--muted);
+    }
+
+    .notice-card {
+      background: var(--notice);
+      border: 1px solid rgba(15, 107, 78, 0.22);
+      border-radius: 16px;
+      padding: 18px 20px;
+      font-size: 15px;
+      font-weight: 500;
+      color: #13382b;
+      margin-bottom: 28px;
+    }
+
+    .section {
+      margin-bottom: 24px;
+    }
+
+    .section h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 8px;
+    }
+
+    .section p {
+      font-size: 15px;
+      color: #293d35;
+    }
+
+    .contact-footer {
+      margin-top: 30px;
+      padding: 18px 20px;
+      border-radius: 14px;
+      background: #f3f7f5;
+      border: 1px solid var(--border);
+      font-size: 14.5px;
+      color: var(--muted);
+    }
+
+    .contact-footer a, .section a {
+      color: var(--primary);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .contact-footer a:hover, .section a:hover { text-decoration: underline; }
+
+    [hidden] { display: none !important; }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="./index.html">Amal Tracker &middot; Legal</a>
+      <nav class="nav-actions">
+        <a class="link-pill" href="./privacy-policy.html">Privacy Policy</a>
+        <button class="lang-btn active" id="btn-en" type="button" onclick="setLang('en')">English</button>
+        <button class="lang-btn" id="btn-bn" type="button" onclick="setLang('bn')">বাংলা</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="doc-container">
+    <article class="paper" id="doc-en">
+      <div class="doc-header">
+        <h1>Terms of Service</h1>
+        <div class="meta">App: <strong>Amal Tracker</strong> (<code>org.mys.amaltracker</code>) &middot; Developer: Monipur Youth Society (MYS) &middot; Last updated: September 12, 2026</div>
+      </div>
+
+      <div class="notice-card">
+        By installing or using Amal Tracker, you agree to use the app responsibly and to these terms. If you do not agree, please do not use the app.
+      </div>
+
+      <section class="section">
+        <h2>1. The Service</h2>
+        <p>
+          Amal Tracker is a completely free, ad-free, offline-first Islamic productivity app designed for recording personal amals, prayer history, lifetime Qaza tracking, reminders, Quran and dua reading, tasbih counting, and related summaries. Features may evolve, be updated, or be discontinued as the app develops.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>2. Personal Use</h2>
+        <p>
+          You may use the app for your own lawful, personal purposes. Do not misuse the app, attempt to interfere with its software integrity, reverse engineer protected components, or use it to violate another person's rights or applicable law.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>3. Your Data, Backups, and App Lock</h2>
+        <p>
+          Amal Tracker stores your entries, amal and prayer history, and security PIN locally on your device. The app does not maintain a remote user account. You are solely responsible for protecting your device, remembering your App Lock PIN, and maintaining your own data backups. The app cannot recover data lost through device failure, uninstallation, OS reset, corruption, or forgotten security PINs.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>4. Religious and Health Disclaimer</h2>
+        <p>
+          Amal Tracker is a personal tracking and organizational tool, not a mufti, Islamic scholar, doctor, or emergency service. Guidance and calculations provided in the app are general informational references and may not reflect every juristic opinion. Menstrual-break (Haiz/Nifas) exemption toggles and related features are purely for personal worship organization and should not replace advice from a qualified scholar or healthcare professional.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>5. Quranic Text and Islamic Content</h2>
+        <p>
+          Quranic verses, translations, transliterations, and Duas are sourced from reputable and widely recognized public Islamic repositories (including Quran.com and Muslim Bangla). While verified with great diligence, digital rendering or typographical issues can occasionally arise. If you notice any error, please notify us immediately through Send Feedback or <a href="mailto:amaltracker.support@gmail.com">amaltracker.support@gmail.com</a>.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>6. Reminders, Calculations, and Battery Optimization</h2>
+        <p>
+          Notifications, dates, streaks, prayer status, statistics, and calculations are provided for your daily convenience. Notification timing and widget updates may be delayed or restricted by device-level battery optimization (e.g., Doze mode, background limits), system permissions, or timezone differences. Always verify critical prayer times with trusted local sources.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>7. Third-Party Services</h2>
+        <p>
+          The app relies on Google Firebase Analytics (for anonymous app improvement), Google Firebase Crashlytics (for stability diagnosis), your email client, and operating-system services. These operate under their respective terms and privacy policies. We are not responsible for third-party service outages or policies.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>8. Intellectual Property</h2>
+        <p>
+          The app, its design, source code, original text, artwork, and branding belong to Amal Tracker / Monipur Youth Society (MYS) unless otherwise stated. You may not copy, redistribute, reverse-engineer, or commercially exploit protected components without prior written permission.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>9. Disclaimer and Limitation of Liability</h2>
+        <p>
+          Amal Tracker is provided on an "as is" and "as available" basis without warranties of any kind. To the extent permitted by law, we are not liable for any direct, indirect, or incidental damages resulting from the use or inability to use the application.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>10. Changes and Termination</h2>
+        <p>
+          We may update these terms or discontinue features as needed. You may stop using the app at any time by uninstalling it. Updated terms will always be accessible on this page and inside the app and apply once published.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>11. Contact and Support</h2>
+        <p>
+          For support, legal questions, or feedback, use the Send Feedback option in Settings or email us directly at <a href="mailto:amaltracker.support@gmail.com">amaltracker.support@gmail.com</a>.
+        </p>
+      </section>
+
+      <div class="contact-footer">
+        <strong>Amal Tracker</strong> &middot; Monipur Youth Society (MYS) &middot; Support Contact: <a href="mailto:amaltracker.support@gmail.com">amaltracker.support@gmail.com</a>
+      </div>
+    </article>
+
+    <article class="paper" id="doc-bn" lang="bn" hidden>
+      <div class="doc-header">
+        <h1>সেবার শর্তাবলী (Terms of Service)</h1>
+        <div class="meta">অ্যাপ: <strong>Amal Tracker (আমল ট্র্যাকার)</strong> &middot; নির্মাতা: মনিপুর ইয়ুথ সোসাইটি (MYS) &middot; সর্বশেষ আপডেট: ১২ সেপ্টেম্বর ২০২৬</div>
+      </div>
+
+      <div class="notice-card">
+        Amal Tracker ইনস্টল বা ব্যবহার করলে আপনি দায়িত্বশীলভাবে অ্যাপ ব্যবহার এবং এই শর্তাবলীতে সম্মত হচ্ছেন। সম্মত না হলে অ্যাপ ব্যবহার করবেন না।
+      </div>
+
+      <section class="section">
+        <h2>১. সেবা</h2>
+        <p>
+          Amal Tracker একটি সম্পূর্ণ বিনামূল্যে, বিজ্ঞাপনমুক্ত, অফলাইন-ফার্স্ট ইসলামিক প্রোডাক্টিভিটি অ্যাপ, যা আমল, নামাজের রেকর্ড, রিমাইন্ডার, কুরআন ও দোয়া তিলাওয়াত, তাসবীহ এবং জীবনব্যাপী কাজা নামাজের হিসাব সংরক্ষণে সহায়তা করে। অ্যাপের উন্নয়নের স্বার্থে ফিচারসমূহ পরিবর্তিত, উন্নত বা পরিমার্জিত হতে পারে।
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>২. ব্যক্তিগত ব্যবহার</h2>
+        <p>
+          আপনি অ্যাপটি কেবল নিজের আইনসম্মত ব্যক্তিগত প্রয়োজনে ব্যবহার করতে পারবেন। অ্যাপের অপব্যবহার, সফটওয়্যারের কার্যক্রমে বাধা সৃষ্টি, রিভার্স-ইঞ্জিনিয়ারিং বা কোনো বেআইনি কাজের উদ্দেশ্যে অ্যাপ ব্যবহার করা নিষিদ্ধ।
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>৩. আপনার ডেটা, ব্যাকআপ ও অ্যাপ লক</h2>
+        <p>
+          Amal Tracker-এর সমস্ত ট্র্যাকিং ডেটা, নামাজের রেকর্ড এবং সিকিউরিটি পিন শুধুমাত্র আপনার ডিভাইসেই সংরক্ষিত থাকে। কোনো কেন্দ্রীয় ক্লাউড অ্যাকাউন্ট না থাকায় আপনার ডেটা সুরক্ষিত রাখা, নিয়মিত ব্যাকআপ নেওয়া এবং অ্যাপ লকের পিন মনে রাখা সম্পূর্ণ আপনার দায়িত্ব। ডিভাইস নষ্ট হওয়া, অ্যাপ আনইনস্টল, ফ্যাক্টরি রিসেট বা পিন ভুলে যাওয়ার কারণে ডেটা মুছে গেলে তা পুনরুদ্ধারের সুযোগ অ্যাপ কর্তৃপক্ষের নেই।
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>৪. ধর্মীয় ও স্বাস্থ্য সংক্রান্ত সতর্কবার্তা (Disclaimer)</h2>
+        <p>
+          Amal Tracker শুধুমাত্র ব্যক্তিগত ট্র্যাকিং ও রিমাইন্ডার টুল; এটি কোনো মুফতি, আলেম, ফতোয়া বিভাগ বা চিকিৎসকের বিকল্প নয়। অ্যাপে প্রদত্ত ধর্মীয় দিকনির্দেশনা ও হায়েজ/নিফাসের বিরতির অপশন ফিকহি সূত্রের সাধারণ নির্দেশিকা। জটিল মাসআলা বা ব্যক্তিগত বিষয়ে সবসময় বিজ্ঞ আলেম ও স্বাস্থ্য বিশেষজ্ঞের পরামর্শ নেওয়া জরুরি।
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>৫. কুরআনুল কারিম ও ইসলামিক কনটেন্ট</h2>
+        <p>
+          অ্যাপের কুরআনুল কারিমের আয়াত, অর্থ এবং দোয়াসমূহ নির্ভরযোগ্য উন্মুক্ত ইসলামিক উৎস থেকে সর্বোচ্চ সতর্কতায় সংকলিত। ডিভাইসের ফন্ট বা কারিগরি কারণে কোনো অনিচ্ছাকৃত মুদ্রণত্রুটি চোখে পড়লে দ্রুত Send Feedback অথবা <a href="mailto:amaltracker.support@gmail.com">amaltracker.support@gmail.com</a> ঠিকানায় জানানোর অনুরোধ করা হলো।
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>৬. রিমাইন্ডার, হিসাব-নিকাশ ও ব্যাটারি অপটিমাইজেশন</h2>
+        <p>
+          নোটিফিকেশন, স্ট্রিক, পরিসংখ্যান ও নামাজের স্ট্যাটাস আপনার দৈনন্দিন সুবিধার জন্য গণনা করা হয়। ডিভাইসের ব্যাটারি অপটিমাইজেশন (যেমন Doze মোড, ব্যাকগ্রাউন্ড রেস্ট্রিকশন) এবং পারমিশনের কারণে নোটিফিকেশন বা উইজেটে বিলম্ব হতে পারে। নামাজের সঠিক ওয়াক্তের ব্যাপারে সর্বদা স্থানীয় নির্ভরযোগ্য সময়সূচি অনুসরণ করুন।
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>৭. থার্ড-পার্টি সার্ভিস</h2>
+        <p>
+          অ্যাপটি Google Firebase Analytics (অ্যাপ উন্নয়ন ও ব্যবহারের গতিধারা বুঝতে), Firebase Crashlytics (ক্র্যাশ ও বাগ শনাক্তকরণ), ডিভাইসের ইমেইল অ্যাপ ও অপারেটিং সিস্টেমের ওপর নির্ভর করতে পারে। এসব সার্ভিস তাদের নিজস্ব প্রাইভেসি ও শর্তাবলী অনুযায়ী পরিচালিত হয়।
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>৮. মেধাস্বত্ব ও কপিরাইট</h2>
+        <p>
+          অন্যভাবে উল্লেখ না থাকলে অ্যাপের সমস্ত কোড, ইন্টারফেস ডিজাইন, গ্রাফিক্স এবং ব্র্যান্ডিং Amal Tracker / মনিপুর ইয়ুথ সোসাইটি (MYS)-এর নিজস্ব সম্পদ। অনুমতি ছাড়া অ্যাপের কোনো অংশ নকল, পরিবর্তন বা বাণিজ্যিকভাবে ব্যবহার করা যাবে না।
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>৯. দায়বদ্ধতার সীমাবদ্ধতা (Limitation of Liability)</h2>
+        <p>
+          অ্যাপটি “যেমন আছে” (As-Is) ভিত্তিতে প্রদান করা হয়েছে। অ্যাপ ব্যবহারের ফলে হওয়া যেকোনো প্রকার প্রত্যক্ষ বা পরোক্ষ ক্ষতির ক্ষেত্রে ডেভেলপার বা অ্যাপ কর্তৃপক্ষ আইনত দায়বদ্ধ থাকবে না।
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>১০. পরিবর্তন ও সমাপ্তি</h2>
+        <p>
+          আমরা যেকোনো সময় এই শর্তাবলী বা ফিচারে পরিবর্তন আনতে পারি। আপনি যেকোনো সময় অ্যাপ আনইনস্টল করে ব্যবহার বন্ধ করতে পারেন। আপডেটেড শর্তাবলী প্রকাশের পর থেকে অ্যাপ ব্যবহার চালিয়ে গেলে তা মেনে নিয়েছেন বলে গণ্য হবে।
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>১১. যোগাযোগ ও সহায়তা</h2>
+        <p>
+          এই শর্তাবলী সম্পর্কিত যেকোনো প্রশ্ন বা মতামতের জন্য Settings-এর Send Feedback ব্যবহার করুন অথবা সরাসরি <a href="mailto:amaltracker.support@gmail.com">amaltracker.support@gmail.com</a> ঠিকানায় যোগাযোগ করুন।
+        </p>
+      </section>
+
+      <div class="contact-footer">
+        <strong>Amal Tracker (আমল ট্র্যাকার)</strong> &middot; মনিপুর ইয়ুথ সোসাইটি (MYS) &middot; যোগাযোগ: <a href="mailto:amaltracker.support@gmail.com">amaltracker.support@gmail.com</a>
+      </div>
+    </article>
+  </main>
+
+  <script>
+    function setLang(lang) {
+      const en = document.getElementById('doc-en');
+      const bn = document.getElementById('doc-bn');
+      const btnEn = document.getElementById('btn-en');
+      const btnBn = document.getElementById('btn-bn');
+      if (lang === 'bn') {
+        en.hidden = true;
+        bn.hidden = false;
+        btnEn.classList.remove('active');
+        btnBn.classList.add('active');
+      } else {
+        en.hidden = false;
+        bn.hidden = true;
+        btnEn.classList.add('active');
+        btnBn.classList.remove('active');
+      }
+    }
+  </script>
+</body>
+</html>
