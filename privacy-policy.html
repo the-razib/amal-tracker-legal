@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Amal Tracker</title>
+  <meta name="description" content="Official Privacy Policy for Amal Tracker (org.mys.amaltracker) by Monipur Youth Society (MYS)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f6faf8;
+      --surface: #ffffff;
+      --notice: #eaf6f1;
+      --primary: #0f6b4e;
+      --primary-dark: #0b4735;
+      --text: #162620;
+      --muted: #4b6359;
+      --border: rgba(15, 107, 78, 0.15);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Plus Jakarta Sans', 'Hind Siliguri', system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.72;
+    }
+
+    .topbar {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .topbar-inner {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      font-weight: 800;
+      font-size: 16px;
+      color: var(--primary-dark);
+      text-decoration: none;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .lang-btn {
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--primary-dark);
+      padding: 7px 14px;
+      border-radius: 999px;
+      font-family: inherit;
+      font-size: 13.5px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .lang-btn.active {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+    }
+
+    .link-pill {
+      text-decoration: none;
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--muted);
+      padding: 7px 12px;
+      border-radius: 999px;
+    }
+
+    .link-pill:hover { background: var(--notice); color: var(--primary-dark); }
+
+    .doc-container {
+      max-width: 860px;
+      margin: 30px auto 60px;
+      padding: 0 20px;
+    }
+
+    .paper {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 36px 34px;
+      box-shadow: 0 16px 40px rgba(11, 71, 53, 0.06);
+    }
+
+    @media (max-width: 600px) {
+      .paper { padding: 24px 18px; }
+    }
+
+    .doc-header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 20px;
+      margin-bottom: 24px;
+    }
+
+    .doc-header h1 {
+      font-size: clamp(24px, 3.5vw, 32px);
+      font-weight: 800;
+      color: var(--primary-dark);
+      margin-bottom: 6px;
+    }
+
+    .meta {
+      font-size: 13.5px;
+      color: var(--muted);
+    }
+
+    .notice-card {
+      background: var(--notice);
+      border: 1px solid rgba(15, 107, 78, 0.22);
+      border-radius: 16px;
+      padding: 18px 20px;
+      font-size: 15px;
+      font-weight: 500;
+      color: #13382b;
+      margin-bottom: 28px;
+    }
+
+    .section {
+      margin-bottom: 24px;
+    }
+
+    .section h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 8px;
+    }
+
+    .section p, .section li {
+      font-size: 15px;
+      color: #293d35;
+    }
+
+    .section ul {
+      margin-top: 8px;
+      padding-left: 20px;
+    }
+
+    .section li {
+      margin-bottom: 6px;
+    }
+
+    .contact-footer {
+      margin-top: 30px;
+      padding: 18px 20px;
+      border-radius: 14px;
+      background: #f3f7f5;
+      border: 1px solid var(--border);
+      font-size: 14.5px;
+      color: var(--muted);
+    }
+
+    .contact-footer a {
+      color: var(--primary);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .contact-footer a:hover { text-decoration: underline; }
+
+    [hidden] { display: none !important; }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="./index.html">Amal Tracker &middot; Legal</a>
+      <nav class="nav-actions">
+        <a class="link-pill" href="./terms-of-service.html">Terms of Service</a>
+        <button class="lang-btn active" id="btn-en" type="button" onclick="setLang('en')">English</button>
+        <button class="lang-btn" id="btn-bn" type="button" onclick="setLang('bn')">বাংলা</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="doc-container">
+    <article class="paper" id="doc-en">
+      <div class="doc-header">
+        <h1>Privacy Policy</h1>
+        <div class="meta">App: <strong>Amal Tracker</strong> (<code>org.mys.amaltracker</code>) &middot; Developer: Monipur Youth Society (MYS) &middot; Last updated: September 12, 2026</div>
+      </div>
+
+      <div class="notice-card">
+        By installing or using Amal Tracker, you agree to the privacy practices described in this policy. Amal Tracker is designed to help you track your personal amals, prayers, and daily worship with complete privacy. Your spiritual records stay strictly on your device and are never sold or uploaded to our servers.
+      </div>
+
+      <section class="section">
+        <h2>1. Information Stored on Your Device</h2>
+        <p>
+          Amal Tracker operates on an offline-first architecture. The app does not require account creation, sign-up, or phone number verification. Your personal prayer records, custom amals, daily reflections, streaks, Quran reading progress and bookmarks, tasbih counts, menstrual-break (period exemption) dates, profile preferences, and app settings are stored locally on your device in secure local storage (SQLite and Hive databases). This personal worship data is never automatically uploaded to our servers.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>2. App Lock and Biometric Privacy</h2>
+        <p>
+          To protect your personal spiritual records from unauthorized local access, you can enable App Lock using a PIN or Biometric Unlock (fingerprint or face recognition). Biometric authentication is handled exclusively by your device's hardware and operating system security framework (such as Android BiometricPrompt or TEE). Amal Tracker never accesses, scans, stores, or transmits your biometric data. Your PIN and security answer are salted, hashed (HMAC-SHA256), and stored strictly on your device using hardware-backed secure storage.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>3. Firebase Analytics &amp; Advertising ID</h2>
+        <p>
+          When Firebase is enabled for your platform, the app collects anonymous or pseudonymous usage statistics (such as app opens, screen navigation, and feature interactions) and standard app/device identifiers via Google Firebase Analytics. Selected non-sensitive preferences such as app language and theme mode may be sent as user properties. We use these aggregated statistics solely to understand feature usage, improve stability, and enhance Amal Tracker.
+        </p>
+        <p style="margin-top: 8px;">
+          Amal Tracker is <strong>100% ad-free</strong> and does not display advertisements or sell user data. While the Firebase Analytics SDK includes Android's Advertising ID permission (<code>AD_ID</code>) for standard analytics measurement, we do not use it for ad targeting or third-party advertising networks. We strictly do not transmit your prayer logs, custom amal names, menstrual-break dates, personal reflections, or lock credentials as Analytics parameters.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>4. Firebase Crashlytics</h2>
+        <p>
+          To detect and fix crashes quickly, crash reports and non-fatal technical errors may be sent to Google Firebase Crashlytics. Reports include technical diagnostics such as device model, operating system version, app version, stack traces, crash logs, installation identifiers, and limited UI context (such as active theme or language). Diagnostic data does not include your confidential worship history.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>5. Notifications, Alarms, and Permissions</h2>
+        <p>To deliver timely reminders and seamless functionality, Amal Tracker requests specific system permissions:</p>
+        <ul>
+          <li><strong>POST_NOTIFICATIONS:</strong> To display prayer reminders, morning/evening adhkar alerts, weekly reports, and daily amal reminders.</li>
+          <li><strong>SCHEDULE_EXACT_ALARM:</strong> To trigger time-sensitive prayer and amal reminders precisely at the scheduled moment.</li>
+          <li><strong>RECEIVE_BOOT_COMPLETED:</strong> To automatically restore and reschedule your reminders after your device restarts.</li>
+          <li><strong>VIBRATE:</strong> To provide tactile haptic feedback during tasbih counting and notification alerts.</li>
+          <li><strong>INTERNET / ACCESS_NETWORK_STATE:</strong> Used for optional Quran translations and word-by-word data downloads, in-app update checks, and anonymous Firebase Analytics/Crashlytics telemetry.</li>
+        </ul>
+        <p style="margin-top: 8px;">You can grant or revoke these permissions at any time through your device System Settings.</p>
+      </section>
+
+      <section class="section">
+        <h2>6. Feedback and Email Communications</h2>
+        <p>
+          If you use Send Feedback, the app opens your installed email client with a pre-filled draft addressed to <a href="mailto:amaltracker.support@gmail.com">amaltracker.support@gmail.com</a>. Non-sensitive technical details (app version, platform, and selected language) may be pre-filled to help us troubleshoot issues faster. You have full visibility and control to review, edit, or remove this information before sending. No email is sent silently without your manual confirmation.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>7. Local Backups and Data Portability</h2>
+        <p>
+          Amal Tracker allows you to generate an encrypted backup file (<code>.amal</code>) or import compatible backups (<code>.amal</code> / legacy <code>.json</code>) on your device. Because backups are created locally, you have complete control over where you export, store, or share them (such as local storage, Google Drive, or messaging apps). You are responsible for safeguarding copies shared outside the app.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>8. Data Retention, Deletion, and Reset</h2>
+        <p>
+          Because Amal Tracker does not maintain user accounts or cloud worship databases, your personal worship data resides solely on your device. You can delete all local data at any time using the <strong>Reset All Data</strong> option in App Settings, or by clearing app storage / uninstalling the app. Anonymous analytics and crash diagnostic data received by Google Firebase are encrypted in transit (HTTPS/TLS) and retained according to standard Google Firebase retention policies.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>9. Children's Privacy and Third-Party Services</h2>
+        <p>
+          Amal Tracker is intended for general audiences (ages 13 and above) and does not knowingly collect personally identifiable information (PII) from children or any users. Third-party services utilized by the app (Google Firebase Analytics, Google Firebase Crashlytics, Quran content endpoints, your operating system, and your email provider) operate under their own respective privacy policies.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>10. Changes to This Policy</h2>
+        <p>
+          We may update this Privacy Policy periodically to reflect new features, operational practices, or legal compliance. Any revisions will be published on this page and inside the app with an updated date. Continued use of the app after an update signifies your review and acceptance of the revised policy.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>11. Contact and Support</h2>
+        <p>
+          If you have any questions, concerns, or requests regarding this Privacy Policy or your data privacy, please contact us directly at <a href="mailto:amaltracker.support@gmail.com">amaltracker.support@gmail.com</a> or via the in-app Send Feedback option.
+        </p>
+      </section>
+
+      <div class="contact-footer">
+        <strong>Amal Tracker</strong> &middot; Monipur Youth Society (MYS) &middot; Privacy &amp; Support Contact: <a href="mailto:amaltracker.support@gmail.com">amaltracker.support@gmail.com</a>
+      </div>
+    </article>
+
+    <article class="paper" id="doc-bn" lang="bn" hidden>
+      <div class="doc-header">
+        <h1>গোপনীয়তা নীতি (Privacy Policy)</h1>
+        <div class="meta">অ্যাপ: <strong>Amal Tracker (আমল ট্র্যাকার)</strong> &middot; নির্মাতা: মনিপুর ইয়ুথ সোসাইটি (MYS) &middot; সর্বশেষ আপডেট: ১২ সেপ্টেম্বর ২০২৬</div>
+      </div>
+
+      <div class="notice-card">
+        Amal Tracker ইনস্টল বা ব্যবহার করলে আপনি এই গোপনীয়তা নীতি মেনে চলতে সম্মত হচ্ছেন। আপনি যদি এই নীতিতে সম্মত না হন, তবে অনুগ্রহ করে অ্যাপটি ব্যবহার করবেন না। আমল ট্র্যাকার একটি সম্পূর্ণ অফলাইন-ফার্স্ট ইসলামিক আমল ট্র্যাকিং অ্যাপ—আপনার দৈনন্দিন আমল, নামাজ ও ব্যক্তিগত ইবাদতের তথ্য সম্পূর্ণ আপনার ডিভাইসেই থাকে এবং তা কখনো আমাদের কোনো সার্ভারে আপলোড করা হয় না।
+      </div>
+
+      <section class="section">
+        <h2>১. আপনার ডিভাইসে সংরক্ষিত তথ্য (Local Storage)</h2>
+        <p>
+          আমল ট্র্যাকার সম্পূর্ণ অফলাইন-ফার্স্ট (offline-first) আর্কিটেকচারে তৈরি। অ্যাপ ব্যবহারের জন্য কোনো অ্যাকাউন্ট তৈরি, সাইন-ইন বা ফোন নম্বরের প্রয়োজন নেই। আপনার ব্যক্তিগত নামাজের রেকর্ড, কাস্টম আমল, স্ট্রিক, কুরআন পাঠের অগ্রগতি ও বুকমার্ক, তাসবীহ কাউন্ট, বিশেষ সময়ের বিরতির তারিখ, প্রোফাইল পছন্দসমূহ এবং সেটিংস সম্পূর্ণভাবে আপনার ডিভাইসের লোকাল স্টোরেজে (SQLite ও Hive ডাটাবেস) সংরক্ষিত থাকে। এই ইবাদতের তথ্যগুলো স্বয়ংক্রিয়ভাবে আমাদের কোনো সার্ভারে আপলোড হয় না।
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>২. অ্যাপ লক ও বায়োমেট্রিক নিরাপত্তা (App Lock &amp; Biometrics)</h2>
+        <p>
+          আপনার ব্যক্তিগত আমলের তথ্যের গোপনীয়তা রক্ষায় আপনি পিন (PIN) অথবা বায়োমেট্রিক আনলক (ফিঙ্গারপ্রিন্ট বা ফেস আনলক) চালু করতে পারেন। বায়োমেট্রিক সুবিধা সক্রিয় থাকলে তা সম্পূর্ণভাবে আপনার ডিভাইসের নিজস্ব হার্ডওয়্যার ও অপারেটিং সিস্টেমের সিকিউর ফ্রেমওয়ার্ক (যেমন: অ্যান্ড্রয়েড BiometricPrompt) দ্বারা যাচাই করা হয়। আমল ট্র্যাকার কখনোই আপনার বায়োমেট্রিক ডেটা সংগ্রহ, স্ক্যান বা সার্ভারে সংরক্ষণ করে না। আপনার সেট করা পিন কোডটিও শুধুমাত্র আপনার ডিভাইসে সুরক্ষিত সল্টেড হ্যাশ (HMAC-SHA256) আকারে সংরক্ষিত থাকে।
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>৩. Firebase Analytics (বেনামী পরিসংখ্যান)</h2>
+        <p>
+          অ্যাপের নির্ভরযোগ্যতা বৃদ্ধি এবং ব্যবহারকারীর অভিজ্ঞতা উন্নত করতে প্ল্যাটফর্ম সমর্থিত হলে Google Firebase Analytics-এর মাধ্যমে বেনামী বা ছদ্মনামযুক্ত ব্যবহার সংক্রান্ত পরিসংখ্যান (যেমন: অ্যাপ চালু করা, স্ক্রিন পরিদর্শন এবং সাধারণ ফিচারের ব্যবহার) এবং ডিভাইস/অ্যাপ আইডেন্টিফায়ার সংগ্রহ করা হয়। নির্বাচিত কিছু সাধারণ পছন্দ (যেমন: ভাষা ও থিম) Analytics ইউজার প্রপার্টি হিসেবে যেতে পারে। অ্যাপটি <strong>১০০% বিজ্ঞাপনমুক্ত (Ad-Free)</strong>। আমরা কখনোই আপনার ব্যক্তিগত নামাজের হিসাব, কাস্টম আমলের নাম, ব্যক্তিগত নোট, বিশেষ সময়ের তথ্য বা লক পিন অ্যানালিটিক্স হিসেবে পাঠাই না।
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>৪. Firebase Crashlytics (ত্রুটি বিশ্লেষণ)</h2>
+        <p>
+          অ্যাপে কোনো প্রযুক্তিগত ত্রুটি বা ক্র্যাশ ঘটলে তা দ্রুত সমাধান করার জন্য Google Firebase Crashlytics-এর মাধ্যমে ডায়াগনস্টিক রিপোর্ট সংগৃহীত হতে পারে। এতে আপনার ডিভাইসের মডেল, অপারেটিং সিস্টেম ভার্সন, অ্যাপ ভার্সন, ইনস্টলেশন আইডি এবং ত্রুটি সম্পর্কিত টেকনিক্যাল স্ট্যাক ট্রেস (stack trace) থাকতে পারে। এতে আপনার কোনো ব্যক্তিগত ধর্মীয় ডেটা বা গোপনীয় তথ্য অন্তর্ভুক্ত থাকে না।
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>৫. নোটিফিকেশন, অ্যালার্ম ও ডিভাইসের অনুমতি (Permissions)</h2>
+        <p>আমল ট্র্যাকারে বিভিন্ন সেবা সঠিকভাবে পরিচালনার জন্য ডিভাইসের নির্দিষ্ট কিছু অনুমতির প্রয়োজন হয়:</p>
+        <ul>
+          <li><strong>POST_NOTIFICATIONS:</strong> নামাজের ওয়াক্ত, সকাল-সন্ধ্যার আজকার, সাপ্তাহিক রিপোর্ট এবং আমলের রিমাইন্ডার পাঠানোর জন্য।</li>
+          <li><strong>SCHEDULE_EXACT_ALARM:</strong> সঠিক সময়ে অ্যালার্ম ও নোটিফিকেশন চালু হওয়ার জন্য।</li>
+          <li><strong>RECEIVE_BOOT_COMPLETED:</strong> ডিভাইস রিস্টার্ট বা রিবুট হওয়ার পর আপনার নির্ধারিত রিমাইন্ডারগুলো পুনরায় সচল করার জন্য।</li>
+          <li><strong>VIBRATE:</strong> তাসবীহ গণনা এবং নোটিফিকেশন সতর্কবার্তায় ভাইব্রেশন বা হ্যাপটিক ফিডব্যাকের জন্য।</li>
+          <li><strong>INTERNET / ACCESS_NETWORK_STATE:</strong> কুরআনের অনুবাদ বা শব্দে শব্দে অর্থ ডাউনলোড, অ্যাপ আপডেট যাচাই এবং বেনামী Firebase অ্যানালিটিক্স/ক্র্যাশ রিপোর্টিংয়ের জন্য।</li>
+        </ul>
+        <p style="margin-top: 8px;">আপনি যেকোনো সময় ডিভাইসের সিস্টেম সেটিংস থেকে এই অনুমতিগুলো চালু বা বন্ধ করতে পারেন।</p>
+      </section>
+
+      <section class="section">
+        <h2>৬. ফিডব্যাক ও ইমেইল যোগাযোগ (Feedback &amp; Support)</h2>
+        <p>
+          অ্যাপের Send Feedback অপশন ব্যবহার করলে আপনার ডিভাইসে ইনস্টল থাকা ইমেইল অ্যাপ চালু হবে এবং <a href="mailto:amaltracker.support@gmail.com">amaltracker.support@gmail.com</a> ঠিকানায় একটি খসড়া ইমেইল তৈরি হবে। সমস্যা দ্রুত সমাধানের সুবিধার্থে অ্যাপ ও অপারেটিং সিস্টেমের ভার্সন খসড়ায় যুক্ত হতে পারে, যা পাঠানোর আগে আপনি সম্পূর্ণ দেখতে ও পরিবর্তন করতে পারবেন। ব্যবহারকারীর অনুমতি ছাড়া কোনো ইমেইল স্বয়ংক্রিয়ভাবে পাঠানো হয় না।
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>৭. লোকাল ব্যাকআপ ও ডেটা শেয়ারিং (Backup &amp; Portability)</h2>
+        <p>
+          আমল ট্র্যাকার একটি সুরক্ষিত এনক্রিপ্টেড লোকাল ব্যাকআপ ফাইল (<code>.amal</code>) তৈরি ও রিস্টোর করার সুযোগ দেয়। ব্যাকআপ ফাইলটি সম্পূর্ণ আপনার ডিভাইসেই তৈরি হয়। এটি কোথায় সংরক্ষণ করবেন বা কার সাথে শেয়ার করবেন তা সম্পূর্ণ আপনার সিদ্ধান্তের ওপর নির্ভরশীল। অ্যাপের বাইরে শেয়ার করা তথ্যের সুরক্ষার দায়িত্ব ব্যবহারকারীর।
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>৮. ডেটা মুছে ফেলা ও রিসেট (Data Deletion)</h2>
+        <p>
+          যেহেতু আপনার যাবতীয় ইবাদত ও আমলের রেকর্ড লোকালি ডিভাইসেই জমা থাকে, তাই আপনি যেকোনো সময় অ্যাপ সেটিংসের <strong>Reset All Data</strong> অপশন ব্যবহারের মাধ্যমে সমস্ত ডেটা স্থায়ীভাবে মুছে ফেলতে পারেন। এছাড়াও অ্যাপ আনইনস্টল করলে ডিভাইসের লোকাল ডাটাবেস সম্পূর্ণ মুছে যায়। Firebase-এ সংরক্ষিত বেনামী টেকনিক্যাল ডেটা HTTPS/TLS দ্বারা এনক্রিপ্টেড থাকে এবং তাদের স্ট্যান্ডার্ড ডেটা রিটেনশন নীতি অনুযায়ী পরিচালিত হয়।
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>৯. শিশুদের গোপনীয়তা ও তৃতীয় পক্ষের সেবা</h2>
+        <p>
+          আমল ট্র্যাকার সার্বজনীন ব্যবহারের জন্য (১৩ বছর ও তদূর্ধ্ব) তৈরি এবং এটি ইচ্ছাকৃতভাবে শিশু বা কোনো ব্যবহারকারীর কাছ থেকে ব্যক্তিগত শনাক্তকরণযোগ্য তথ্য (PII) সংগ্রহ করে না। অ্যাপে ব্যবহৃত তৃতীয় পক্ষের সেবা (যেমন: Google Firebase এবং আপনার ইমেইল প্রদানকারী) তাদের নিজস্ব গোপনীয়তা নীতি মেনে চলে।
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>১০. নীতিমালার পরিবর্তন (Policy Updates)</h2>
+        <p>
+          অ্যাপের নতুন ফিচার সংযোজন বা আইনি প্রয়োজনীয়তার প্রেক্ষিতে এই গোপনীয়তা নীতি সময়ে সময়ে হালনাগাদ হতে পারে। যেকোনো পরিবর্তন এই পেজে এবং অ্যাপের ভেতরে আপডেট করা হবে। নীতিমালার পরিবর্তনের পর অ্যাপ ব্যবহার অব্যাহত রাখলে আপনি সংশোধিত নীতি গ্রহণ করেছেন বলে গণ্য হবে।
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>১১. যোগাযোগ ও সহায়তা (Contact Us)</h2>
+        <p>
+          আমাদের গোপনীয়তা নীতি বা ডেটা সুরক্ষা সংক্রান্ত যেকোনো প্রশ্ন, পরামর্শ বা মতামতের জন্য সরাসরি <a href="mailto:amaltracker.support@gmail.com">amaltracker.support@gmail.com</a> ঠিকানায় ইমেইল করতে পারেন অথবা অ্যাপের Send Feedback ব্যবহার করতে পারেন।
+        </p>
+      </section>
+
+      <div class="contact-footer">
+        <strong>Amal Tracker (আমল ট্র্যাকার)</strong> &middot; মনিপুর ইয়ুথ সোসাইটি (MYS) &middot; যোগাযোগ: <a href="mailto:amaltracker.support@gmail.com">amaltracker.support@gmail.com</a>
+      </div>
+    </article>
+  </main>
+
+  <script>
+    function setLang(lang) {
+      const en = document.getElementById('doc-en');
+      const bn = document.getElementById('doc-bn');
+      const btnEn = document.getElementById('btn-en');
+      const btnBn = document.getElementById('btn-bn');
+      if (lang === 'bn') {
+        en.hidden = true;
+        bn.hidden = false;
+        btnEn.classList.remove('active');
+        btnBn.classList.add('active');
+      } else {
+        en.hidden = false;
+        bn.hidden = true;
+        btnEn.classList.add('active');
+        btnBn.classList.remove('active');
+      }
+    }
+  </script>
+</body>
+</html>
