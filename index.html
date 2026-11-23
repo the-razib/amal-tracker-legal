@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amal Tracker — Official Legal &amp; Support Center</title>
+  <meta name="description" content="Official Privacy Policy, Terms of Service, and support resources for Amal Tracker by Monipur Youth Society (MYS)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f6faf8;
+      --surface: #ffffff;
+      --surface-soft: #eef7f3;
+      --primary: #0f6b4e;
+      --primary-dark: #0b4735;
+      --accent: #c9a24c;
+      --text: #162620;
+      --muted: #526a60;
+      --border: rgba(15, 107, 78, 0.14);
+      --shadow: 0 18px 45px rgba(11, 71, 53, 0.08);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Plus Jakarta Sans', 'Hind Siliguri', system-ui, -apple-system, sans-serif;
+      background:
+        radial-gradient(900px 420px at 15% -5%, rgba(15, 107, 78, 0.12), transparent 65%),
+        radial-gradient(700px 380px at 90% 5%, rgba(201, 162, 76, 0.12), transparent 60%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+      flex: 1;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #0c4d39 0%, #117556 60%, #158763 100%);
+      color: #ffffff;
+      border-radius: 24px;
+      padding: 40px 34px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 280px;
+      height: 280px;
+      right: -70px;
+      top: -90px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(201, 162, 76, 0.25), transparent 70%);
+      pointer-events: none;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-size: clamp(28px, 4vw, 40px);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.9);
+      max-width: 650px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin-top: 28px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 26px;
+      box-shadow: 0 10px 28px rgba(11, 71, 53, 0.05);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 16px 36px rgba(11, 71, 53, 0.1);
+    }
+
+    .card h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      font-size: 14.5px;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 11px 18px;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 14.5px;
+      text-decoration: none;
+      background: var(--primary);
+      color: #ffffff;
+      transition: background 0.18s ease;
+    }
+
+    .btn:hover { background: var(--primary-dark); }
+
+    .btn-secondary {
+      background: var(--surface-soft);
+      color: var(--primary-dark);
+      border: 1px solid var(--border);
+    }
+
+    .btn-secondary:hover { background: #e1f1ea; }
+
+    .info-box {
+      margin-top: 28px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 26px;
+    }
+
+    .info-box h3 {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 10px;
+    }
+
+    .info-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px 24px;
+      font-size: 14.5px;
+      color: var(--muted);
+    }
+
+    .info-list strong { color: var(--text); }
+
+    footer {
+      text-align: center;
+      padding: 22px 16px 30px;
+      font-size: 13.5px;
+      color: var(--muted);
+    }
+
+    a.inline {
+      color: var(--primary);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    a.inline:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="hero">
+      <div class="badge">Monipur Youth Society (MYS) &middot; Sadaqah Jariyah</div>
+      <h1>Amal Tracker (আমল ট্র্যাকার)</h1>
+      <p>
+        An offline-first, 100% ad-free Islamic daily amal, 5-waqt Salah, Qaza, Quran, Dua, and Tasbih tracker built to help Muslims stay consistent with complete privacy.
+      </p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <div>
+          <h2>Privacy Policy</h2>
+          <p>
+            Learn how Amal Tracker protects your personal worship records on your device, handles permissions, and uses anonymous Firebase diagnostics. Available in English &amp; Bangla.
+          </p>
+        </div>
+        <a class="btn" href="./privacy-policy.html">Read Privacy Policy &rarr;</a>
+      </article>
+
+      <article class="card">
+        <div>
+          <h2>Terms of Service</h2>
+          <p>
+            Review the usage terms, local backup responsibilities, Islamic content sources, and religious &amp; health disclaimers for Amal Tracker. Available in English &amp; Bangla.
+          </p>
+        </div>
+        <a class="btn" href="./terms-of-service.html">Read Terms of Service &rarr;</a>
+      </article>
+
+      <article class="card">
+        <div>
+          <h2>Support &amp; Feedback</h2>
+          <p>
+            Need help, found a bug, or want to suggest a feature? Reach out directly to the Amal Tracker support team anytime.
+          </p>
+        </div>
+        <a class="btn btn-secondary" href="mailto:amaltracker.support@gmail.com">amaltracker.support@gmail.com</a>
+      </article>
+    </section>
+
+    <section class="info-box">
+      <h3>App Summary</h3>
+      <ul class="info-list">
+        <li><strong>Application Name:</strong> Amal Tracker</li>
+        <li><strong>Package ID:</strong> <code>org.mys.amaltracker</code></li>
+        <li><strong>Organization:</strong> Monipur Youth Society (MYS)</li>
+        <li><strong>Support Email:</strong> <a class="inline" href="mailto:amaltracker.support@gmail.com">amaltracker.support@gmail.com</a></li>
+        <li><strong>Architecture:</strong> Offline-first, No Account Required</li>
+        <li><strong>Monetization:</strong> 100% Free &amp; Ad-Free</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2026 Amal Tracker &middot; Monipur Youth Society (MYS). All rights reserved.
+  </footer>
+</body>
+</html>
